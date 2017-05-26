@@ -5,4 +5,5 @@ bower_components
 node_modules
 /.sass-cache
 psd
- build src
+build
+src
