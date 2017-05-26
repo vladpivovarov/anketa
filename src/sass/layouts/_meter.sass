@@ -1,0 +1,60 @@
+.meters
+    padding: $vertical-gutter*5 0 $vertical-gutter*6 $gorizontal-gutter*2;
+    font-family: $font-family-roboto-medium
+    background: url(../images/bg-fon.png)
+    margin-bottom: $vertical-gutter*5
+    
+.meter
+    width: rem-calc(255)
+    height: rem-calc(133)
+    position: relative
+    margin: auto
+    
+.meter-elem
+    position: absolute
+
+.meter-elem-blue
+    right: 0
+    bottom: 0
+
+.meter-elem-orange
+    left: 0
+    bottom: 0
+    
+.meter-elem-green
+    top: rem-calc(5)
+    left: rem-calc(55)
+    
+.meter-elem-arrow
+    position: absolute
+    left: 0
+    right: 0
+    bottom: rem-calc(-8px)
+    margin: auto
+    transition: all .4s cubic-bezier(.65, 1.95, .03, .32)
+    transform: rotate(60deg)
+    
+@include breakpoint(small)
+    .counter
+        text-align: center
+        padding-top: $vertical-gutter*4
+    h5
+        display: inline-block
+        width: 100%
+        
+    .spincrement
+        width: 100%
+@include breakpoint(medium)
+    .counter
+        text-align: left
+        display: block
+        
+    h5
+        display: block
+        
+
+.spincrement
+    display: inline-block
+    color: $blue
+    font-size: rem-calc(50)
+    font-family: $font-family-roboto-black

@@ -1,0 +1,118 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Главная')
+    include pug/styles.pug
+  body
+    include pug/svg.pug
+    
+    // Блок. "Контакты" (open) //
+    .container
+        .row
+            .small-12.medium-12.columns
+                .contacts
+                    .signet
+                        img(src="images/signet.png")
+                    .row
+                        .small-12.medium-3.columns
+                            .avatar
+                                img.avatar-img(src="images/avatar.png")
+                        .small-12.medium-9.columns
+                            form.names
+                                input.input-text(type="text" placeholder="имя" value="Владислав")
+                                input.input-text(type="text" placeholder="дата рождения" value="27.04.1997")
+                                input.input-text(type="text" placeholder="город" value="Керчь")
+                                input.input-text(type="text" placeholder="контактные данные" value="+7 (978) 720 15 27")    
+    // Блок "Контакты" (close) //
+   
+    // Блок "Skills" (open) // 
+    .container
+        .row
+            .medium-12.columns
+                form.skills
+                    h5 Навыки
+                    .row
+                        .small-6.medium-3.columns
+                            .skill
+                                label.label
+                                    input.label-checkbox(checked type="checkbox" name="html5" value="html5")
+                                    .label-check.label-check-active
+                                    span html5
+                                label.label
+                                    input.label-checkbox(checked type="checkbox" name="sass" value="sass")
+                                    .label-check.label-check-active
+                                    span sass
+                                label.label
+                                    input.label-checkbox(type="checkbox" name="vanillajs" value="js")
+                                    .label-check
+                                    span vanillajs
+                        .small-6.medium-3.columns
+                            .skill
+                                label.label
+                                    input.label-checkbox(checked type="checkbox" name="git" value="git")
+                                    .label-check.label-check-active
+                                    span git
+                                label.label
+                                    input.label-checkbox(checked type="checkbox" name="css3" value="css3")
+                                    .label-check.label-check-active
+                                    span css3
+                                label.label
+                                    input.label-checkbox(type="checkbox" name="less" value="less")
+                                    .label-check
+                                    span less
+                        .small-6.medium-3.columns
+                            .skill
+                                label.label
+                                    input.label-checkbox(type="checkbox" name="angular" value="js")
+                                    .label-check
+                                    span angular
+                                label.label
+                                    input.label-checkbox(checked type="checkbox" name="foundation" value="foundation")
+                                    .label-check.label-check-active
+                                    span foundation
+                                label.label
+                                    input.label-checkbox(checked type="checkbox" name="бэм" value="бэм")
+                                    .label-check.label-check-active
+                                    span бэм
+                        .small-6.medium-3.columns
+                            .skill
+                                label.label
+                                    input.label-checkbox(checked type="checkbox" name="gulp" value="gulp")
+                                    .label-check.label-check-active
+                                    span gulp
+                                label.label
+                                    input.label-checkbox(checked type="checkbox" name="jquery" value="js")
+                                    .label-check.label-check-active
+                                    span jquery
+                                label.label
+                                    input.label-checkbox(checked type="checkbox" name="bootstrap" value="bootstrap")
+                                    .label-check.label-check-active
+                                    span bootstrap
+    // Блок "Skills" (close) //
+    
+    // Блок "Meter" (open) //
+    .container
+        .row
+            .medium-12.columns
+                .meters
+                    .row
+                        .small-12.medium-6.columns
+                            .meter 
+                                img(src="images/blue.png").meter-elem.meter-elem-blue
+                                img(src="images/orange.png").meter-elem.meter-elem-orange
+                                img(src="images/green.png").meter-elem.meter-elem-green
+                                img(src="images/arrow.png").meter-elem.meter-elem-arrow
+                        .small-12.medium-6.columns
+                            .counter
+                                h5 Мой уровень владения JavaScript
+                                div.spincrement 333
+            
+    // Блок "Meter" (close) //
+
+
+    include pug/scripts.pug

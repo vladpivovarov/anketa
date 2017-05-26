@@ -1,0 +1,63 @@
+.skills
+    font-family: $font-family-roboto-medium
+    background: url(../images/bg-fon.png)
+    margin-bottom: rem-calc(3)
+    padding: $vertical-gutter * 3 0 0 $vertical-gutter * 2
+    
+.skill
+    padding: $vertical-gutter 0 $vertical-gutter 0;
+.label
+    padding: 0 0 $vertical-gutter 0
+    position: relative
+    
+.label-check, span
+    font-family: $font-family-roboto-medium
+    font-size: rem-calc(12)
+    padding: 0
+    margin: 0
+    display: inline-block
+    vertical-align: middle
+    text-transform: uppercase
+    color: $gray
+    letter-spacing: rem-calc(0.8)
+    cursor: pointer
+    transition: all .4s
+
+span
+    padding-left: $gorizontal-gutter
+    
+span:hover
+    color: $gray3
+
+.label-check
+    cursor: pointer
+    display: inline-block
+    vertical-align: middle
+    background: $light-silver
+    border-radius: rem-calc(5)
+    width: rem-calc(20)
+    height: rem-calc(20)
+    
+.label-check:after
+    content: ""
+    display: block
+    width: rem-calc(18)
+    height: rem-calc(20)
+    top: 0
+    left: 0
+    margin: auto
+    background: url(../images/chekalka.png)
+    background-repeat: no-repeat
+    background-position: center center
+    opacity: 0
+    
+
+.label-check-active
+    background: $blue
+    
+.label-check-active:after
+    opacity: 1
+
+.label-checkbox
+    position: absolute
+    left: rem-calc(-100000)  

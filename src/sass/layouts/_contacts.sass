@@ -1,0 +1,49 @@
+.contacts
+    position: relative
+    background: url(../images/bg-fon.png)
+    margin: $vertical-gutter * 6 0 rem-calc(3) 0
+    padding-top: $vertical-gutter * 3
+    
+.signet
+    text-align: right
+    position: absolute
+    width: 30%
+    bottom: rem-calc(20)
+    right: rem-calc(4)
+    
+@include breakpoint(small)
+    .avatar
+        width: rem-calc(140)
+        border-radius: 50%
+        overflow: hidden
+        margin: auto
+        
+    .avatar-img
+        display: inline-block
+        max-width: 100%
+        
+@include breakpoint(medium)
+    .avatar
+        width: rem-calc(140)
+        border-radius: 50%
+        overflow: hidden
+        margin-left: rem-calc(22)
+        
+.names
+    padding-left: $gorizontal-gutter * 2
+        
+input[type=text]
+    height: $input-height
+    font-family: $font-family-roboto-medium
+    color: $gray
+    width: 95%
+    margin-bottom: $vertical-gutter*2.7
+    outline: none
+    padding-left: 0
+    letter-spacing: rem-calc(0.8)
+
+input[type=text], input[type=text]:focus 
+    border: $input-border-width
+    background: 0
+    box-shadow: none
+    border-bottom: 2px solid $gray3
